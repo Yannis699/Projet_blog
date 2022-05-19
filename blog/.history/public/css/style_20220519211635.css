@@ -120,7 +120,7 @@ header {
 .header-menu>li {
   border-radius: 3px;
   padding: 5px 15px; 
-  transition: background-color 0.2s;
+  transition: background-color
 }
 
 .header-menu>li:hover{

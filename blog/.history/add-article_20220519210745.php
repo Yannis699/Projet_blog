@@ -5,8 +5,8 @@
 
 <head>
     <?php require_once 'includes/head.php' ?>
-    <link rel="stylesheet" href="public/css/index.css">
-    <title>Blog</title>
+    
+    <title>Créer un article</title>
 </head>
 
 <body>

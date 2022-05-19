@@ -120,11 +120,10 @@ header {
 .header-menu>li {
   border-radius: 3px;
   padding: 5px 15px; 
-  transition: background-color 0.2s;
 }
 
 .header-menu>li:hover{
-background-color: var(--primary-dark);
+background-color: var(--primary);
 }
 
 .logo {
