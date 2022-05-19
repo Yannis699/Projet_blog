@@ -1,3 +1,8 @@
+<pre>
+    <?php
+    print_r($_SERVER);
+    ?>
+</pre>
 
 <header>
    <a href="/" class="logo">Blog</a>

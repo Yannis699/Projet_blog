@@ -127,10 +127,9 @@ header {
 background-color: var(--primary-dark);
 }
 
-.active {
-background-color: var(--primary-dark);
+.active{
+  
 }
-
 .logo {
   font-weight: 700;
   font-size: 2rem;
