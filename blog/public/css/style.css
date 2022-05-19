@@ -154,7 +154,6 @@ footer {
   display: flex;
   flex-flow: column;
   align-self: center;
-  background-color : red;
   max-width: 100rem;
   width: 100%;
 }
