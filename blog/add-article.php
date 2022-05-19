@@ -40,7 +40,7 @@
               <!-- <p class="text-error"></p> -->
             </div>
             <div class="form-actions">
-              <button class="btn btn-secondary" type="button">Annuler</button>
+              <a href="/" class="btn btn-secondary" type="button">Annuler</a>
               <button class="btn btn-primary" type="submit">Sauvegarder</button>
             </div>
           </form>
