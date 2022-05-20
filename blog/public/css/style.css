@@ -178,3 +178,7 @@ footer {
 .p-10{
   padding: 10px;
 }
+
+.overflow {
+  overflow: hidden;
+}
