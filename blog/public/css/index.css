@@ -27,3 +27,7 @@
     transition: transform 1s;
 }
 
+.category-container>h2 {
+    font-size: 1.9rem ;
+    padding: 0 1rem;
+}
