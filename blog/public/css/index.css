@@ -16,7 +16,12 @@
     transform: scale(1.2);
 }
 
-.article>h2 {
+.newsfeed-content h2 {
+    font-size: 1.9rem;
+    padding: 0 1rem;
+  }
+
+.article>h3 {
     font-size: 1.7rem;
     padding: 1.5rem;
 }
@@ -30,4 +35,28 @@
 .category-container>h2 {
     font-size: 1.9rem ;
     padding: 0 1rem;
+}
+
+.newfeed-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.category-container {
+    flex: 200px;
+}
+
+.category-container li{
+    margin: 1rem 0;
+    transition: color 0.2s;
+}
+
+.category-container li:hover{
+    color:var(--primary);
+    cursor: pointer;
+}
+
+.cat-active {
+    color: var(--primary);
+    font-weight: 700;
 }
