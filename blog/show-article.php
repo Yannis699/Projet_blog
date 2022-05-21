@@ -1,19 +1,46 @@
+<?php
+$filename = __DIR__ . '/data/articles.json';
+$articles = [];
+$_GET = filter_input_array(INPUT_GET, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+$id = $_GET['id'] ?? '';
+
+if (!$id) {
+  header('Location: /');
+} else {
+  if (file_exists($filename)) {
+    $articles = json_decode(file_get_contents($filename), true) ?? [];
+    $articleIndex = array_search($id, array_column($articles, 'id'));
+    $article = $articles[$articleIndex];
+  }
+}
+
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/show-article.css">
-    <link rel="stylesheet" href="/public/css/style.css">
-    <title>Article</title>
-</head>
-<body>
+<html lang="fr">
+
+  <head>
+      <?php require_once 'includes/head.php' ?>
+      <link rel="stylesheet" href="/public/css/show-article.css">
+      <title>Article</title>
+  </head>
+
+  <body>
     <div class="container">
-        <?php require_once 'includes/header.php'; ?>
-        <div class="content">
+      <?php require_once 'includes/header.php' ?>
+      <div class="content">
+        <div class="article-container">
+          <a class="article-back" href="/">Retour à la liste des articles</a>
+          <div class="article-cover-img" style="background-image:url(<?= $article['image'] ?>)"></div>
+          <h1 class="article-title"><?= $article['title'] ?></h1>
+          <div class="separator"></div>
+          <p class="article-content"><?= $article['content'] ?></p>
         </div>
-        <?php require_once 'includes/footer.php'; ?>
+      </div>
+      <?php require_once 'includes/footer.php' ?>
     </div>
-</body>
+
+  </body>
+
 </html>
