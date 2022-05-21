@@ -187,3 +187,7 @@ footer {
 .overflow {
   overflow: hidden;
 }
+
+.low-opacity {
+  opacity: 0.5;
+}

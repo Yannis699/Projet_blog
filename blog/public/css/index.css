@@ -16,7 +16,12 @@
     transform: scale(1.2);
 }
 
-.article>h2 {
+.newsfeed-content h2 {
+    font-size: 1.9rem;
+    padding: 0 1rem;
+  }
+
+.article>h3 {
     font-size: 1.7rem;
     padding: 1.5rem;
 }
